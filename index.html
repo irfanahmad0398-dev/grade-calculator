@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>GradeCalc | How to Calculate Promedios de Notas Easily and Accurately Guide 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-body: #F8FAFE;
+      --bg-surface: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-elevated: #F0F2F8;
+      --text-primary: #0F2C3D;
+      --text-secondary: #2C5A6E;
+      --text-muted: #5C7F94;
+      --accent-primary: #3B82F6;
+      --accent-secondary: #2563EB;
+      --accent-soft: #EFF4FF;
+      --accent-glow: rgba(59, 130, 246, 0.08);
+      --border-light: #E2EAF0;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 20px 30px -12px rgba(0, 0, 0, 0.08);
+      --gradient-hero: linear-gradient(135deg, #EEF2FF 0%, #E4E9FF 100%);
+      --footer-bg: #0F2A3E;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 6%;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* header */
+    .site-header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0.85rem 0;
+      gap: 1rem;
+    }
+    .logo {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #3B82F6, #1E3A8A);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .logo span {
+      background: none;
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent-primary);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--accent-primary);
+      padding: 0.4rem 1.1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      color: var(--accent-primary);
+      transition: all 0.2s;
+    }
+    .btn-outline:hover {
+      background: var(--accent-primary);
+      color: white;
+    }
+
+    /* hero section */
+    .hero {
+      background: var(--gradient-hero);
+      padding: 4rem 0 5rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: white;
+      padding: 0.3rem 1rem;
+      border-radius: 60px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      color: var(--accent-secondary);
+      margin-bottom: 1.2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-primary);
+      max-width: 950px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent-primary);
+      border-bottom: 3px solid var(--accent-primary);
+    }
+    .hero-text {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.65;
+      max-width: 720px;
+      margin-bottom: 2rem;
+    }
+    .inline-link {
+      color: var(--accent-primary);
+      text-decoration: none;
+      font-weight: 700;
+      border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+      transition: all 0.2s;
+    }
+    .inline-link:hover {
+      color: var(--accent-secondary);
+      border-bottom-color: var(--accent-primary);
+    }
+    .hero-cta {
+      background: var(--accent-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0.85rem 2rem;
+      border-radius: 48px;
+      font-weight: 700;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 18px rgba(59, 130, 246, 0.2);
+    }
+    .hero-cta:hover {
+      background: var(--accent-secondary);
+      transform: translateY(-3px);
+    }
+
+    /* sections */
+    .section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .section-last {
+      border-bottom: none;
+    }
+    .sec-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+    .sec-title span {
+      color: var(--accent-primary);
+    }
+    .eyebrow {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: var(--accent-primary);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .grid-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .step-card {
+      background: var(--bg-card);
+      border-radius: 28px;
+      padding: 1.8rem;
+      transition: all 0.25s;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+    }
+    .step-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-soft);
+    }
+    .step-icon {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      color: var(--accent-primary);
+    }
+    .check-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+    }
+    .check-item i {
+      color: var(--accent-primary);
+      width: 26px;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: 28px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-surface);
+      box-shadow: var(--shadow-sm);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    th {
+      text-align: left;
+      padding: 1rem 1.2rem;
+      background: var(--bg-elevated);
+      color: var(--accent-primary);
+      font-weight: 700;
+    }
+    td {
+      padding: 1rem 1.2rem;
+      border-top: 1px solid var(--border-light);
+      color: var(--text-secondary);
+    }
+    .badge {
+      background: var(--accent-soft);
+      color: var(--accent-primary);
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      display: inline-block;
+      font-weight: 600;
+    }
+    .double-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .insight-card {
+      background: var(--bg-elevated);
+      border-radius: 24px;
+      padding: 1.6rem;
+      border-left: 4px solid var(--accent-primary);
+      margin-bottom: 1rem;
+    }
+
+    .footer {
+      background: var(--footer-bg);
+      color: #CDE5F5;
+      padding: 3rem 6% 2rem;
+      margin-top: 2rem;
+    }
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .footer-col h4 {
+      color: #A9C9E8;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+    .social-links a {
+      background: rgba(169, 201, 232, 0.12);
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 60px;
+      color: #CDE5F5;
+      transition: 0.2s;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .social-links a:hover {
+      background: var(--accent-primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      border-top: 1px solid rgba(169, 201, 232, 0.15);
+      padding-top: 2rem;
+    }
+
+    @media (max-width: 780px) {
+      .grid-2col, .double-col {
+        grid-template-columns: 1fr;
+      }
+      .header-inner {
+        flex-direction: column;
+      }
+      .hero {
+        padding: 2.5rem 0;
+      }
+      .section {
+        padding: 3rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">Grade<span>Calc</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Grade Guide</a>
+      <a href="#">Weighted System</a>
+      <a href="#">Resources</a>
+      <a href="#" class="btn-outline">Calculate Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero + FIRST LINK (promedios de notas) inside intro -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-badge"><i class="fas fa-chart-line"></i>  academic success · smart evaluation</div>
+      <h1><em>How to Calculate Promedios de Notas</em> Easily and Accurately Guide 2026</h1>
+      <div class="hero-text">
+        Promedios de notas, also known as grade averages, are an essential part of academic evaluation systems used in schools, colleges, and universities around the world. They help measure a student's overall performance by combining different marks into a single final score. Instead of looking at each subject or assignment separately, the promedio de notas gives a clear picture of how well a student is doing academically.
+        Master <a href="https://calculadoradenotas.net/calcular-promedio-ponderado/" class="inline-link"><strong>promedios de notas</strong></a> with our comprehensive guide — learn weighted calculations, avoid common mistakes, and improve your academic planning.
+      </div>
+      <a href="https://calculadoradenotas.net/calcular-promedio-ponderado/" class="hero-cta">Calculate your grade average →</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- What is Promedios de Notas? -->
+    <section class="section">
+      <div class="grid-2col">
+        <div>
+          <div class="eyebrow">core concept</div>
+          <h2 class="sec-title">What is <span>Promedios de Notas?</span></h2>
+          <p>Promedios de notas refers to the average score obtained by combining multiple grades from different subjects, exams, or assignments. It is a mathematical representation of a student's overall academic performance. Each grade contributes to the final result, and sometimes different weights are assigned depending on the importance of each exam or task. For example, a final exam may have more value than a class assignment. In simple words, it is a method used to summarize all academic results into one final number.</p>
+          <div class="check-list">
+            <div class="check-item"><i class="fas fa-chart-simple"></i> Measures overall performance</div>
+            <div class="check-item"><i class="fas fa-weight-hanging"></i> Supports weighted & unweighted systems</div>
+            <div class="check-item"><i class="fas fa-graduation-cap"></i> Essential for scholarships & admissions</div>
+          </div>
+        </div>
+        <div style="background: var(--bg-card); border-radius: 2rem; padding: 2rem; border:1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+          <i class="fas fa-brain" style="font-size: 2.6rem; color: var(--accent-primary);"></i>
+          <p style="margin-top: 1rem; font-weight: 500;">"Grade averages transform scattered scores into a clear academic roadmap — helping students focus, improve, and succeed."</p>
+          <hr style="margin: 1rem 0; border-color:var(--border-light);">
+          <p><i class="fas fa-chart-line"></i> Over 90% of universities use weighted grade averages for admissions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importance of Promedios de Notas -->
+    <section class="section">
+      <div class="eyebrow">why it matters</div>
+      <h2 class="sec-title">Importance of <span>Promedios de Notas</span> in Education</h2>
+      <div class="card-grid">
+        <div class="step-card"><div class="step-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Fair Evaluation</h3><p>Teachers assess performance consistently across all students.</p></div>
+        <div class="step-card"><div class="step-icon"><i class="fas fa-trophy"></i></div><h3>Scholarship Decisions</h3><p>Strong averages unlock academic opportunities and funding.</p></div>
+        <div class="step-card"><div class="step-icon"><i class="fas fa-chart-line"></i></div><h3>Progress Tracking</h3><p>Students monitor improvement over time across semesters.</p></div>
+        <div class="step-card"><div class="step-icon"><i class="fas fa-clipboard-list"></i></div><h3>Transparent System</h3><p>Combines multiple scores into one understandable result.</p></div>
+      </div>
+    </section>
+
+    <!-- How Promedios de Notas is Calculated + Steps -->
+    <section class="section">
+      <div class="grid-2col">
+        <div>
+          <div class="eyebrow">calculation methods</div>
+          <h2 class="sec-title">How <span>Promedios de Notas</span> is Calculated</h2>
+          <p>The calculation of promedios de notas depends on whether all grades have equal importance or different weights. In a simple system, all marks are added together and divided by the number of subjects. In a weighted system, each grade is multiplied by its assigned percentage before calculating the final average. This ensures that more important exams have a greater impact on the final result. Understanding this method helps students better plan their study strategy and focus more on high-weight tasks.</p>
+        </div>
+        <div style="background: var(--bg-elevated); border-radius: 2rem; padding: 2rem;">
+          <i class="fas fa-list-ol" style="font-size: 2rem; color: var(--accent-primary);"></i>
+          <h3 style="margin: 0.5rem 0;">Steps to Understand Grade Average Calculation</h3>
+          <div class="check-list">
+            <div class="check-item"><i class="fas fa-1"></i> Collect all grades</div>
+            <div class="check-item"><i class="fas fa-2"></i> Identify weight percentages</div>
+            <div class="check-item"><i class="fas fa-3"></i> Multiply grade × weight</div>
+            <div class="check-item"><i class="fas fa-4"></i> Add weighted scores</div>
+            <div class="check-item"><i class="fas fa-5"></i> Divide by total weight</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example Table -->
+    <section class="section">
+      <div class="eyebrow">real-world example</div>
+      <h2 class="sec-title">Example of <span>Promedios de Notas</span> Calculation</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Subject</th><th>Grade</th><th>Weight (%)</th><th>Weighted Score</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Mathematics</td><td>85</td><td>30%</td><td>25.5</td></tr>
+            <tr><td>Science</td><td>90</td><td>40%</td><td>36</td></tr>
+            <tr><td>English</td><td>80</td><td>30%</td><td>24</td></tr>
+            <tr style="background: var(--bg-elevated); font-weight: 600;"><td>Total</td><td></td><td>100%</td><td>85.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="badge" style="margin-top: 1rem;">Final promedio de notas: 85.5 — showing weighted contribution of each subject</p>
+    </section>
+
+    <!-- Common Mistakes + Benefits -->
+    <section class="section">
+      <div class="double-col">
+        <div>
+          <div class="eyebrow">avoid pitfalls</div>
+          <h3 class="sec-title" style="font-size:1.6rem;">Common Mistakes <span>Students Make</span></h3>
+          <div class="insight-card"><strong>❌ Ignoring weight distribution</strong><br>Leads to incorrect final average.</div>
+          <div class="insight-card"><strong>❌ Mixing up percentages and raw scores</strong><br>Always convert weights to decimals.</div>
+          <div class="insight-card"><strong>❌ Forgetting to include all assignments</strong><br>Missing grades skew results significantly.</div>
+        </div>
+        <div>
+          <div class="eyebrow">key advantages</div>
+          <h3 class="sec-title" style="font-size:1.6rem;">Benefits of Understanding <span>Promedios de Notas</span></h3>
+          <div class="insight-card"><strong>✅ Realistic goal setting</strong><br>Identify weak areas before finals.</div>
+          <div class="insight-card"><strong>✅ Consistent study habits</strong><br>Encourages regular academic discipline.</div>
+          <div class="insight-card"><strong>✅ Fair teacher evaluation</strong><br>Helps identify students needing support.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weighted vs Simple System -->
+    <section class="section">
+      <div class="grid-2col">
+        <div>
+          <div class="eyebrow">system comparison</div>
+          <h2 class="sec-title">Weighted vs <span>Simple Average</span></h2>
+          <p>A simple average treats every grade equally — ideal for subjects with equal importance. A weighted average assigns higher percentages to critical exams or assignments, reflecting their real academic impact. Understanding both methods allows students to calculate their performance accurately, whether using school grading systems, university applications, or scholarship criteria.</p>
+        </div>
+        <div style="background: var(--bg-card); border-radius: 2rem; padding: 1.8rem; border:1px solid var(--border-light);">
+          <i class="fas fa-scale-balanced" style="font-size: 2rem; color: var(--accent-primary);"></i>
+          <h3 style="margin: 0.7rem 0;">⚖️ When to Use Each</h3>
+          <p><strong>Simple Average:</strong> All exams have same value, weekly quizzes, equal credit courses.</p>
+          <p style="margin-top: 0.8rem;"><strong>Weighted Average:</strong> Final exams (40% weight), major projects, cumulative assessments.</p>
+          <div class="badge" style="margin-top:1rem;">Most universities use weighted systems</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section section-last">
+      <div class="grid-2col">
+        <div>
+          <div class="eyebrow">final thoughts</div>
+          <h3 class="sec-title" style="font-size:1.6rem;">Conclusion: <span>Master Grade Averages</span></h3>
+          <p>Promedios de notas is a simple yet powerful concept used to evaluate academic performance. It combines multiple grades into one final score, making it easier to understand student progress. Whether calculated manually or using an online academic calculator, it remains an important part of education systems worldwide. By understanding how grade averages work, students can improve their study planning, avoid mistakes, and achieve better academic results. In modern education, mastering this concept is essential for success and long-term academic growth.</p>
+        </div>
+        <div style="background: var(--bg-card); border-radius: 2rem; padding: 1.8rem; border:1px solid var(--border-light);">
+          <i class="fas fa-chalkboard-user" style="font-size: 2rem; color: var(--accent-primary);"></i>
+          <h3 style="margin: 0.7rem 0;">📈 Your Academic Path</h3>
+          <p>Take control of your grades today. Understanding promedios de notas empowers you to make smarter decisions about where to focus your study time, which exams need more attention, and how to achieve your target GPA.</p>
+          <div class="badge" style="margin-top:1rem;">smart planning = better results</div>
+        </div>
+      </div>
+      <div style="text-align: center; max-width: 780px; margin: 3rem auto 0 auto;">
+        <div class="eyebrow">start calculating</div>
+        <h2 class="sec-title">Calculate Your Promedio de Notas Accurately</h2>
+        <p>Use our step-by-step guide or online tools to compute weighted and unweighted grade averages with confidence.</p>
+        <div style="margin: 2rem auto; width: 60px; height: 3px; background: var(--accent-primary); border-radius: 4px;"></div>
+        <a href="https://calculadoradenotas.net/calcular-promedio-ponderado/" class="hero-cta">Calculate promedios de notas now →</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h3 style="font-family:'Plus Jakarta Sans'; font-size:1.6rem;">Grade<span style="color:#A9C9E8;">Calc</span></h3>
+      <p style="font-size:0.8rem; max-width:260px;">Your trusted guide for accurate grade average calculation, weighted scoring, and academic performance tracking.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <p><a href="#" style="color:#CDE5F5; text-decoration:none;">Grade Guide</a></p>
+      <p><a href="#" style="color:#CDE5F5; text-decoration:none;">Weighted Calculator</a></p>
+      <p><a href="#" style="color:#CDE5F5; text-decoration:none;">Study Tips</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 GradeCalc — mastering promedios de notas for academic excellence.
+  </div>
+</footer>
+
+</body>
+</html>
